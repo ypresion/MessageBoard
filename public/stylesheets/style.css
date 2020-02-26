@@ -1,8 +1,39 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0 50px;
+  font: 14px 'Roboto Mono';
+}
+
+h1 {
+  padding: 0 0 1em 1em;
 }
 
 a {
   color: #00B7FF;
+}
+
+.container {
+  background-color: rgb(29, 28, 28);
+  width: 400px;
+  padding: .5em;
+  margin: 1.5em;
+  -webkit-box-shadow: 14px -13px 0px -2px rgba(77,25,53,0.97);
+-moz-box-shadow: 14px -13px 0px -2px rgba(77,25,53,0.97);
+box-shadow: 14px -13px 0px -2px rgba(77,25,53,0.97);
+}
+
+p {
+  color: white;
+}
+
+a:link, a:visited {
+  background-color: rgba(77,25,53,0.97);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgba(99, 41, 72, 0.97);
 }

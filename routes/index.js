@@ -2,17 +2,17 @@ const messages = [
   {
     text: "Eggs",
     user: "Egg",
-    date: new Date()
+    date: new Date().toLocaleString('en-GB', { timeZone: 'GMT' })
   },
   {
     text: "Anon is gay",
     user: "anon",
-    date: new Date()
+    date: new Date().toLocaleString('en-GB', { timeZone: 'GMT' })
   },
   {
     text: "youre finally awake",
     user: "npc",
-    date: new Date()
+    date: new Date().toLocaleString('en-GB', { timeZone: 'GMT' })
   }
 ];
 
@@ -33,7 +33,7 @@ router.get('/new', function(req, res, next) {
 router.post('/new', function(req, res, next) {
   let message = req.body.message;
   let author = req.body.author;
-  let date = new Date();
+  let date = new Date().toLocaleString('en-GB', { timeZone: 'GMT' });
 
   messages.push({text: message, user: author, date: date});
 
